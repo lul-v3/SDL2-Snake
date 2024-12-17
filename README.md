@@ -1,2 +1,2 @@
 # SDL2-Snake
- Simple Snake Game
+A small "project" to learn SDL2 and combat boredom. I wrote this when I was half asleep, so please be aware that errors can occur. They will be fixed over time, but no promises on the speed of that! Feel free to contribute or use it as a base for your own projects.

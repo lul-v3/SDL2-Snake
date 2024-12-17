@@ -2,6 +2,7 @@
 #include "Game/Game.h"
 
 int main() {
+    system("title SDL2-Snake Console");
     const int screenWidth = 800;
     const int screenHeight = 600;
     const int gridSize = 20;
