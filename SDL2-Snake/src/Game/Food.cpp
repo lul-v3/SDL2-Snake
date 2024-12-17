@@ -7,15 +7,17 @@ Food::Food(int gridSize) : gridSize(gridSize) {
     position = { 0, 0 };
 }
 
-void Food::spawn(int width, int height, const std::vector<SDL_Point>& snakeBody) {
-    bool valid = false;
-    while (!valid) {
-        position.x = std::rand() % width;
-        position.y = std::rand() % height;
-        valid = true;
-        for (const auto& segment : snakeBody) {
-            if (segment.x == position.x && segment.y == position.y) {
-                valid = false;
+void Food::spawn(int cols, int rows, const std::vector<SDL_Point>& snakeBody) {
+    bool validPosition = false;
+    while (!validPosition) {
+        validPosition = true;
+        position.x = rand() % cols;
+        position.y = rand() % rows;
+
+        // Überprüfen, ob das Food auf der Schlange ist
+        for (const SDL_Point& bodyPart : snakeBody) {
+            if (bodyPart.x == position.x && bodyPart.y == position.y) {
+                validPosition = false;  // Position ist von der Schlange besetzt
                 break;
             }
         }
