@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\include\ImGui\imgui.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\include\ImGui\imgui_demo.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\include\ImGui\imgui_draw.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\include\ImGui\imgui_impl_sdl2.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\include\ImGui\imgui_impl_sdlrenderer2.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\include\ImGui\imgui_tables.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\include\ImGui\imgui_widgets.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Window.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Game.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Snake.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Food.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\SoundManager.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="third_party\lib\x64\LICENSE.freetype.txt" />
+    <Text Include="third_party\lib\x64\LICENSE.harfbuzz.txt" />
+    <Text Include="third_party\lib\x64\LICENSE.zlib.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="third_party\lib\x64\SDL2.dll" />
+    <None Include="third_party\lib\x64\SDL2.pdb" />
+    <None Include="third_party\lib\x64\SDL2_image.dll" />
+    <None Include="third_party\lib\x64\SDL2_mixer.dll" />
+    <None Include="third_party\lib\x64\SDL2_ttf.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="third_party\lib\x64\SDL2.lib" />
+    <Library Include="third_party\lib\x64\SDL2_image.lib" />
+    <Library Include="third_party\lib\x64\SDL2_mixer.lib" />
+    <Library Include="third_party\lib\x64\SDL2_ttf.lib" />
+    <Library Include="third_party\lib\x64\SDL2main.lib" />
+    <Library Include="third_party\lib\x64\SDL2test.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="third_party\include\SDL2\begin_code.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\close_code.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_assert.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_atomic.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_audio.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_bits.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_blendmode.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_clipboard.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_android.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_emscripten.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_iphoneos.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_macosx.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_minimal.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_ngage.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_os2.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_pandora.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_windows.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_wingdk.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_winrt.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_config_xbox.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_copying.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_cpuinfo.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_egl.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_endian.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_error.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_events.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_filesystem.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_gamecontroller.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_gesture.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_guid.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_haptic.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_hidapi.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_hints.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_image.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_joystick.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_keyboard.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_keycode.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_loadso.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_locale.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_log.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_main.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_messagebox.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_metal.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_misc.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_mixer.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_mouse.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_mutex.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_name.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_opengl.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_opengl_glext.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_opengles.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_opengles2.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_opengles2_gl2.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_opengles2_gl2ext.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_opengles2_gl2platform.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_opengles2_khrplatform.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_pixels.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_platform.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_power.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_quit.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_rect.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_render.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_revision.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_rwops.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_scancode.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_sensor.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_shape.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_stdinc.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_surface.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_system.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_syswm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_assert.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_common.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_compare.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_crc32.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_font.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_fuzzer.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_harness.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_images.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_log.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_md5.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_memory.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_test_random.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_thread.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_timer.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_touch.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_ttf.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_types.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_version.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_video.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\SDL2\SDL_vulkan.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\ImGui\imconfig.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\ImGui\imgui.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\ImGui\imgui_impl_sdl2.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\ImGui\imgui_impl_sdlrenderer2.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\ImGui\imgui_internal.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\ImGui\imstb_rectpack.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\ImGui\imstb_textedit.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\include\ImGui\imstb_truetype.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Window.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Game.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Snake.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Food.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\SoundManager.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\fonts\Daydream.ttf" />
+  </ItemGroup>
+</Project>
