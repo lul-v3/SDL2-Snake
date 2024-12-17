@@ -54,6 +54,9 @@
     <ClCompile Include="src\Game\SoundManager.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="src\Game\ConfigManager.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="third_party\lib\x64\LICENSE.freetype.txt" />
@@ -395,6 +398,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="src\Game\SoundManager.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\ConfigManager.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

@@ -4,12 +4,16 @@
 #include "Window.h"
 #include "Snake.h"
 #include "Food.h"
-#include "SoundManager.h" // Include the SoundManager
+#include "SoundManager.h"
+#include "ConfigManager.h"
 
 enum class GameState {
     MENU,
     PLAYING,
-    EXIT
+    GAME_OVER,
+    EXIT,
+    PAUSED,
+    AUDIO_SETTINGS
 };
 
 class Game {
@@ -24,21 +28,36 @@ private:
     void update();
     void render();
     void renderMenu();
-    void handleMenuInput(SDL_Event& event);
+    void renderGameOver();
+    void renderPauseMenu();
+    void renderAudioSettingsMenu();
+    void handleMenuInput(SDL_Event& event);  // Deklaration der Methode
+    void handlePauseMenuInput(SDL_Event& event);
+    void handleAudioSettingsInput(SDL_Event& event);
+    void handleGameOverMenuInput(SDL_Event& event);
+    void resetGame();
 
-    SoundManager soundManager;  // SoundManager Instanz
+    void updateScore();
+
+    SoundManager soundManager;
     Window window;
     Snake snake;
     Food food;
+    ConfigManager config;
 
     bool running;
     int gridSize;
     int cols, rows;
 
-    GameState state; // Game State (Menu, Playing, Exit)
+    GameState state; // Game State (Menu, Playing, Exit, Game Over, Paused, Audio Settings)
     int menuSelection;
+    int audioMenuSelection;
 
     int screenWidth, screenHeight;
+    int currentScore, lastScore;
+    int highScore;
+    bool musicOn;
+    int volume;
 };
 
 #endif

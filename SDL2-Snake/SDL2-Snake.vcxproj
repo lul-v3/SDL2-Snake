@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Game\ConfigManager.cpp" />
     <ClCompile Include="src\Game\SoundManager.cpp" />
     <ClCompile Include="src\Game\Food.cpp" />
     <ClCompile Include="src\Game\Game.cpp" />
@@ -186,6 +187,7 @@
     <Library Include="third_party\lib\x64\SDL2_ttf.lib" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Game\ConfigManager.h" />
     <ClInclude Include="src\Game\SoundManager.h" />
     <ClInclude Include="src\Game\Food.h" />
     <ClInclude Include="src\Game\Game.h" />

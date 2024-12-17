@@ -25,9 +25,26 @@ public:
     // Stoppt Musik
     void stopMusic();
 
+    // Schaltet Musik an/aus
+    void toggleMusic();
+
+    void setMusicOn(bool v);
+
+    // Stellt die Lautstärke ein
+    void adjustVolume(int delta);
+
+    // Gibt die aktuelle Lautstärke zurück
+    int getVolume() const;
+
+    // Gibt den Status der Musik zurück (ob Musik an oder aus ist)
+    bool isMusicOn() const;
+
 private:
     std::unordered_map<std::string, Mix_Chunk*> sounds; // Für Soundeffekte
     Mix_Music* music = nullptr; // Für Musik
+
+    bool musicOn; // Musik ein/aus
+    int volume;   // Lautstärke (0-100)
 };
 
 #endif // SOUNDMANAGER_H

@@ -1,7 +1,8 @@
 #include "SoundManager.h"
 #include <iostream>
+#include <algorithm>
 
-SoundManager::SoundManager() {
+SoundManager::SoundManager() : musicOn(true), volume(50) {
     // SDL_Mixer initialisieren
     if (Mix_Init(MIX_INIT_MP3 | MIX_INIT_OGG) == 0) {
         std::cerr << "SDL_Mixer konnte nicht initialisiert werden! Fehler: " << Mix_GetError() << std::endl;
@@ -59,4 +60,39 @@ void SoundManager::playMusic(int loop) {
 
 void SoundManager::stopMusic() {
     Mix_HaltMusic();
+}
+
+void SoundManager::toggleMusic() {
+    if (musicOn) {
+        stopMusic(); // Stoppt die Musik
+    }
+    else {
+        playMusic(); // Spielt die Musik
+    }
+    musicOn = !musicOn; // Wechsel den Status der Musik
+}
+
+void SoundManager::setMusicOn(bool v)
+{
+    musicOn = v;
+}
+
+void SoundManager::adjustVolume(int volume) {
+    int sdlVolume = static_cast<int>(volume * 1.28);  // 100% entspricht 128 in SDL (0 - 128)
+
+    // Setze Musiklautstärke
+    Mix_VolumeMusic(sdlVolume);
+
+    // Setze Lautstärke für alle Soundeffekte
+    for (auto& sound : sounds) {
+        Mix_VolumeChunk(sound.second, sdlVolume);
+    }
+}
+
+int SoundManager::getVolume() const {
+    return volume;
+}
+
+bool SoundManager::isMusicOn() const {
+    return musicOn;
 }
