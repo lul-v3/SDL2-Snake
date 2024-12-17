@@ -18,7 +18,7 @@ public:
     bool checkCollision(int cols, int rows);
     bool collidesWithPosition(const SDL_Point& foodPosition);
     void grow();
-    void reset();
+    void reset(int cols, int rows);
 
     const std::vector<SDL_Point>& getBody() const { return body; }
 

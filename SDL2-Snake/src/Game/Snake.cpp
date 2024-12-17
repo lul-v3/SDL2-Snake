@@ -89,11 +89,12 @@ void Snake::grow() {
     growth++; // Die Schlange wächst um ein Segment
 }
 
-void Snake::reset() {
-    // Setze die Schlange in der Mitte des Spielfelds zurück
+void Snake::reset(int cols, int rows) {
     body.clear();
-    body.push_back({ 5, 5 }); // Setze den Kopf in die Mitte
-    direction = Direction::RIGHT; // Richtung auf "RIGHT" setzen
-    growth = 0; // Keine zusätzliche Länge
+    body.push_back({ cols / 2, rows / 2 });  // Setze die Snake in die Mitte
+    direction = Direction::LEFT;  // Setze die Bewegungsrichtung nach rechts
+    growth = 1;
 }
+
+
 
